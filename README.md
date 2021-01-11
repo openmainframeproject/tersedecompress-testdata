@@ -1,40 +1,26 @@
-```gfm
-# insert project logo - replace the below logo location with the location of your logo
-![](https://github.com/openmainframeproject/artwork/blob/master/projects/PROJECT NAME/PROJECT NAME-color.svg)
-```
+# tersedecompress-testdata
 
-```gfm
-# Add badges that point to your LICENSE, CII status, and build environment (if it exists). Check out other badges to add at https://shields.io/
-![GitHub](https://img.shields.io/github/license/openmainframeproject/PROJECT NAME)
-[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/CII ID/badge)](https://bestpractices.coreinfrastructure.org/projects/CII ID)
-```
+Test data used for unit tests in the [tersedecompress](https://github.com/openmainframeproject/tersedecompress) project. The data is kept in a separate repository to avoid making the tersdecompress repository too large.
 
-# PROJECT NAME
-
-_2-3 sentence description of the project_
+This test data is based on the [Canterbury Corpus](https://corpus.canterbury.ac.nz/) data for evaluating lossless compression methods. It contains a variety of data including data designed to be problematic for compression algorithms.
 
 ## Install
 
-_Provide install instructions here or point to an INSTALL.md file_
+N/A
 
 ## Build
 
-_Provide build instructions here or point to an BUILD.md file_
+See [tests/README.md](tests/README.md) for some discussion of the test data.
 
 ## Discussion
 
-You can connect with the community in a variety of ways...
-
-- [LINK TO MAILING LIST](https://lists.openmainframeproject.org/g/xxxx-discussion)
-- [#PROJECT NAME channel on Open Mainframe Project Slack](https://slack.openmainframeproject.org)
-- ['PROJECT NAME' category on Open Mainframe Project Community Forums](https://community.openmainframeproject.org/)
+You can connect with the community in a variety of ways. Refer to the [tersedecompress](https://github.com/openmainframeproject/tersedecompress) project for more information.
 
 ## Contributing
-Anyone can contribute to the PROJECT NAME project - learn more at [CONTRIBUTING.md](CONTRIBUTING.md)
+Anyone can contribute to the tersedecomress project - learn more at [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## Governance
-PROJECT NAME is a project hosted by the [Open Mainframe Project](https://openmainframeproject.org). This project has established it's own processes for managing day-to-day processes in the project at [GOVERNANCE.md](GOVERNANCE.md).
-
+tersedecompress-testdata is a project hosted by the [Open Mainframe Project](https://openmainframeproject.org). This project has established it's own processes for managing day-to-day processes in the project at [GOVERNANCE.md](GOVERNANCE.md).
 
 ## Reporting Issues
-To report a problem, you can open an [issue](https://github.com/openmainframeproject/PROJECT NAME/issues) in repository against a specific workflow. If the issue is sensitive in nature or a security related issue, please do not report in the issue tracker but instead email PROJECT NAME-private@lists.openmainframeproject.org.
+To report a problem, you can open an [issue](https://github.com/openmainframeproject/tersedecompress-testdata/issues) in repository against a specific workflow. If the issue is sensitive in nature or a security related issue, please do not report in the issue tracker but instead email tersedecompress-testdata-private@lists.openmainframeproject.org.
