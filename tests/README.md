@@ -2,8 +2,6 @@
 
 This test data is based on the [Canterbury Corpus](https://corpus.canterbury.ac.nz/) data for evaluating lossless compression methods. It contains a variety of data including data designed to be problematic for compression algorithms. It should be a good test for TerseDecompress.
 
-Due to large files in this repository **Git LFS** is required to check it out.
-
 Data was transferred to z/OS using FTP into FB and/or VB format. The resulting uncompressed datasets were downloaded using FTP. Output from TerseDecompress is expected to match the result of downloading the dataset using FTP.
 
 Datasets were compressed using both PACK and SPACK formats for testing with TerseDecompress.
@@ -21,7 +19,7 @@ SITE TRAILINGBLANKS means that trailing blanks are not stripped from the records
 
 Decompression in binary mode will be tested against the result of transferring the file in binary mode using the **SITE RDW** setting in z/OS FTP.
 
-SITE RDW means that the RDWs which contain the record length information are transferred with the data. SITE RDW can be specified for fixed LRECL datasets but has no effect.
+SITE RDW means that variable length record RDWs which contain the record length information are transferred with the data. SITE RDW can be specified for fixed LRECL datasets but has no effect.
 
 ### Text Files
 
