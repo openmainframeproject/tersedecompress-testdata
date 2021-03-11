@@ -1,0 +1,6 @@
+.gitattributes   zos-working-tree-encoding=iso8859-1
+.gitignore       zos-working-tree-encoding=iso8859-1
+
+*.md git-encoding=UTF8 zos-working-tree-encoding=ibm-1047
+*.PACK binary
+*.SPACK binary
