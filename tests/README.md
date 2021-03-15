@@ -7,7 +7,7 @@ Data was transferred to z/OS using FTP into FB and/or VB format. The resulting u
 Datasets were compressed using both PACK and SPACK formats for testing with TerseDecompress.
  
 - Binary format unterse will be tested against all files (resulting in EBCDIC data output for text files).
-- Text format unterse will be tested against text files which can be accurately represented by z/OS records i.e. the files contain logical record boundaries.
+- Text format unterse will be tested against text files which do not contain binary or other data that doesn't translate between EBCDIC and ASCII e.g. UTF8.
 
 ### Text mode decompression
 
@@ -24,14 +24,12 @@ SITE RDW means that variable length record RDWs which contain the record length 
 ### Text Files
 
 - Transferred to z/OS as text format which means they can be viewed on z/OS.
-- Text format files without logical records i.e. files transferred with FB LRECL=1 are not correctly untersed in text mode because record separators will be inserted where they did not exist. Those files will be only be tested in binary mode.
-- Artificial/a.txt is an exception to the LRECL=1 rule because it is a single character and a single z/OS record is an accurate representation.
+- Text format files without logical records i.e. files transferred with FB LRECL=1 are not accurate representations of the original data after transferring in text mode because line separators are inserted. However, they are potentially useful tests because they exercise cases where a single read of compressed input data may produce multiple output records.
 
 ### Binary Files
 
-- Binary files or text files with no record boundaries can be treated as FB with LRECL of 1 byte but do not make sense as variable length records.
-- Text/Binary format files are text but some non-text characters were found so
-translation etc will be unreliable. They will only be tested as binary files, but they do have logical records so can also be tested as VB binary format.
+- Binary files with no record boundaries can be treated as FB with LRECL of 1 byte but do not make sense as variable length records.
+- Text/Binary format files are text with some non-text or e.g. UTF8 characters were found. Text translation etc will be unreliable. Git treats them as binary and so does not do the line end translation that is required for successful testing of text files across platforms. They will only be tested as binary files. They do have logical records so can be tested as VB binary format.
 
 ## Files
 
@@ -40,11 +38,11 @@ The following data from the Canterbury Corpus are in the [CanterburyCorpus](./Ca
 
 | File                      | Format      | FB LRECL | VB LRECL |
 | ------------------------- | ----------- | -------- | -------- |
-| enwik8.xml                | Text        |      N/A |     4200 |
-| Artificial/a.txt          | Text        |        1 |      N/A |
-| Artificial/aaa.txt        | Text        |        1 |      N/A |
-| Artificial/alphabet.txt   | Text        |        1 |      N/A |
-| Artificial/random.txt     | Text        |        1 |      N/A |
+| enwik8.xml                | Text/Binary |      N/A |     4200 |
+| Artificial/a.txt          | Text        |        1 |        5 |
+| Artificial/aaa.txt        | Text        |        1 |        5 |
+| Artificial/alphabet.txt   | Text        |        1 |        5 |
+| Artificial/random.txt     | Text        |        1 |        5 |
 | Canterbury/alice29.txt    | Text/Binary |       80 |      N/A |
 | Canterbury/asyoulik.txt   | Text/Binary |       80 |      255 |
 | Canterbury/cp.html        | Text        |      180 |      255 |
@@ -57,9 +55,9 @@ The following data from the Canterbury Corpus are in the [CanterburyCorpus](./Ca
 | Canterbury/sum            | Binary      |        1 |      N/A |
 | Canterbury/xargs.1        | Text        |       80 |      255 |
 | Large/bible.txt           | Text        |      529 |     1000 |
-| Large/E.coli              | Text        |        1 |      N/A |
+| Large/E.coli              | Text        |        1 |        5 |
 | Large/world192.txt        | Text        |       80 |      255 |
-| Miscellaneous/pi.txt      | Text        |        1 |      N/A |
+| Miscellaneous/pi.txt      | Text        |        1 |        5 |
 
 
 ### Test Data
@@ -74,6 +72,10 @@ The test data itself is in the following directories:
 
 
 ### Notes
+
+#### File enwik8.xml
+
+This file is unreasonably large in FB format due to the record length required for the largest record. It will be testing in VB format only.
 
 #### File TERSED/FB.A.TXT.SPACK (Artificial/a.txt)
 
