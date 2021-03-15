@@ -43,14 +43,14 @@ The following data from the Canterbury Corpus are in the [CanterburyCorpus](./Ca
 | Artificial/aaa.txt        | Text        |        1 |        5 |
 | Artificial/alphabet.txt   | Text        |        1 |        5 |
 | Artificial/random.txt     | Text        |        1 |        5 |
-| Canterbury/alice29.txt    | Text/Binary |       80 |      N/A |
+| Canterbury/alice29.txt    | Text/Binary |       80 |      255 |
 | Canterbury/asyoulik.txt   | Text/Binary |       80 |      255 |
 | Canterbury/cp.html        | Text        |      180 |      255 |
 | Canterbury/fields.c       | Text        |       80 |      255 |
 | Canterbury/grammar.lsp    | Text        |       80 |      255 |
 | Canterbury/kennedy.xls    | Binary      |        1 |      N/A |
 | Canterbury/lcet10.txt     | Text        |      100 |      255 |
-| Canterbury/plrabn12.txt   | Text/Binary |       80 |      N/A |
+| Canterbury/plrabn12.txt   | Text/Binary |       80 |      255 |
 | Canterbury/ptt5           | Binary      |        1 |      N/A |
 | Canterbury/sum            | Binary      |        1 |      N/A |
 | Canterbury/xargs.1        | Text        |       80 |      255 |
