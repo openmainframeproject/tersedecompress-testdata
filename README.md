@@ -1,3 +1,6 @@
+![](https://artwork.openmainframeproject.org/projects/tersedecompress/color/tersedecompress-color.svg)
+![GitHub](https://img.shields.io/github/license/openmainframeproject/tersedecompress)
+
 # tersedecompress-testdata
 
 Test data used for unit tests in the [tersedecompress](https://github.com/openmainframeproject/tersedecompress) project. The data is kept in a separate repository to avoid making the tersdecompress repository too large.
