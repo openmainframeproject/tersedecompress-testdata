@@ -20,10 +20,11 @@ See [tests/README.md](tests/README.md) for some discussion of the test data.
 You can connect with the community in a variety of ways. Refer to the [tersedecompress](https://github.com/openmainframeproject/tersedecompress) project for more information.
 
 ## Contributing
-Anyone can contribute to the tersedecomress project - learn more at [CONTRIBUTING.md](CONTRIBUTING.md)
+Anyone can contribute to the tersedecompress project - learn more at [CONTRIBUTING.md](https://github.com/openmainframeproject/tersedecompress/blob/master/CONTRIBUTING.md)
 
 ## Governance
-tersedecompress-testdata is a project hosted by the [Open Mainframe Project](https://openmainframeproject.org). This project has established it's own processes for managing day-to-day processes in the project at [GOVERNANCE.md](GOVERNANCE.md).
+tersedecompress is a project hosted by the [Open Mainframe Project](https://openmainframeproject.org). This project has established it's own processes for managing day-to-day processes in the project at [GOVERNANCE.md](https://github.com/openmainframeproject/tersedecompress/blob/master/GOVERNANCE.md).
 
 ## Reporting Issues
-To report a problem, you can open an [issue](https://github.com/openmainframeproject/tersedecompress-testdata/issues) in repository against a specific workflow. If the issue is sensitive in nature or a security related issue, please do not report in the issue tracker but instead email tersedecompress-testdata-private@lists.openmainframeproject.org.
+
+https://github.com/openmainframeproject/tersedecompress#how-to-report-problems-and-get-supporthelp
