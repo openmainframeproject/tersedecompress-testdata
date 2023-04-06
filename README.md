@@ -1,5 +1,3 @@
-**NOTICE: This project is in [Emeritus status](https://tac.openmainframeproject.org/process/lifecycle.html#emeritus-stage) and no longer maintained**
-
 ![](https://artwork.openmainframeproject.org/projects/tersedecompress/color/tersedecompress-color.svg)
 ![GitHub](https://img.shields.io/github/license/openmainframeproject/tersedecompress)
 
