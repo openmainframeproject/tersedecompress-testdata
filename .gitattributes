@@ -4,3 +4,5 @@
 *.md git-encoding=UTF8 zos-working-tree-encoding=ibm-1047
 *.PACK binary
 *.SPACK binary
+ZOSBINARY/*.txt text !eol zos-working-tree-encoding=ibm-1047
+ZOSTEXT/*.txt text !eol zos-working-tree-encoding=UTF-8
